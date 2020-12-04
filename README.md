@@ -16,6 +16,13 @@ LEDを点灯させるデバイスドライバを作成した
 ・ブレッドボード
 ・ジャンパ線
 
+# 回路
+GPIO25（22番ピン）とGND（39番ピン）の間にLEDを接続
+
+・LEDのアノードをGPIO25に繋ぐ
+
+・LEDとGNDの間に抵抗を繋ぐ
+
 # 実行方法
 ```
 $ git clone https://github.com/ikeda-hitomi/robot_system.git
@@ -36,7 +43,9 @@ LEDはecho 1を入力した際に点灯し、echo 0を入力すると消灯す�
 ・ハード Raspberry Pi4 ModelB
 ・ソフト Ubuntu18.04
 
+# ライセンス
 
+このリポジトリはGPLv3が付与されている
 
 
 
