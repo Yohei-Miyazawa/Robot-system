@@ -30,7 +30,7 @@ $ echo 0 > /dev/myled0
 LEDはecho 1を入力した際に点灯し、echo 0を入力すると消灯する
 
 # デモ
-デモ動画：https://youtu.be/PtjcwzEXh-Q　
+デモ動画：https://youtu.be/PtjcwzEXh-Q
 
 # 環境
 ・ハード Raspberry Pi4 ModelB
