@@ -31,7 +31,8 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 }
 
 //授業で使用したsushiという文字を生成するプログラム
-/*static ssize_t sushi_read(struct file* filp, char* buf, size_t count, loff_t* pos)
+/*
+static ssize_t sushi_read(struct file* filp, char* buf, size_t count, loff_t* pos)
 {
 	int size = 0;
 	char sushi[]={'s','u','s','h','i',0x0A};
@@ -41,7 +42,8 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 	}
 	size += sizeof(sushi);
 	return size;
-}*/
+}
+*/
 
 static struct file_operations led_fops = {
 	.owner = THIS_MODULE,
@@ -58,6 +60,7 @@ static int __init init_mod(void)
 	const u32 index = led/10;
 	const u32 shift = (led%10)*3;
 	const u32 mask = ~(0x7 << shift);
+	
 	gpio_base[index] = (gpio_base[index] & mask ) | (0x1 << shift);
 					
 	retval = alloc_chrdev_region(&dev, 0, 1, "myled");
