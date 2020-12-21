@@ -25,7 +25,7 @@ GPIO25（22番ピン）とGND（39番ピン）の間にLEDを接続
 
 # 実行方法
 ```
-$ git clone https://github.com/ikeda-hitomi/robot_system.git
+$ git clone https://github.com/Yohei-Miyazawa/Robot_system.git
 $ make
 $ sudo insmod myled.ko
 $ sudo chmod 666 /dev/myled0
