@@ -8,7 +8,7 @@ LEDを点灯させるデバイスドライバを作成した
 
 上田准教授が講義で作成したコードのライセンスを整備したものである
 
-上田教授のデバイスドライバ作成動画：https://youtu.be/xQW8-FNuboo　　
+上田准教授のデバイスドライバ作成動画：https://youtu.be/xQW8-FNuboo　　
 
 # 環境
 ・ハード Raspberry Pi4 ModelB
